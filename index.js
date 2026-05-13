@@ -6,6 +6,11 @@ let kelilingLingkaran = 0;
 luasLingkaran = phi * jariJari * jariJari;
 kelilingLingkaran = 2 * phi * jariJari;
 
+let hasil = `
+Luas lingkaran adalah ${luasLingkaran}
 
-console.log(luasLingkaran);
-console.log(kelilingLingkaran);
+Keliling lingkaran adalah ${kelilingLingkaran}
+`;
+
+
+console.log(hasil);

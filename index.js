@@ -3,7 +3,7 @@ let phi = 0;
 let luasLingkaran = 0;
 let kelilingLingkaran = 0;
 
-if ( jariJari % 7) {
+if ( jariJari % 7 == 0) {
     phi = 22/7
 }
 else {

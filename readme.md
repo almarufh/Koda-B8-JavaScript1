@@ -18,8 +18,14 @@ Keliling lingkaran adalah {kelilingLingkaran}"' }
 
 I@{ shape: lean-r, label: '"{hasil}"' }
 J@{ shape: dbl-circ, label: Stop }
+K@{ shape: diamond, label: "jariJari % 7 == 0" }
+L@{ shape: rect, label: "phi = 22/7"}
+M@{ shape: rect, label: "phi = 3,14"}
 
 
-A --> B --> C --> D --> E --> F ---> G --> H --> I --> J
+A --> B --> C 
+C --> K --> L --> D
+K --> M
+M --> D --> E --> F ---> G --> H --> I --> J
 
 ```

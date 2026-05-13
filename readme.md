@@ -6,7 +6,7 @@
 flowchart TD
 A@{ shape: circle, label: Start }
 B@{ shape: lean-r, label: jariJari}
-C@{ shape: rect, label: phi }
+C@{ shape: rect, label: phi = 0 }
 D@{ shape: rect, label: "luasLingkaran = 0" }
 E@{ shape: rect, label: "kelilingLingkaran = 0" }
 F@{ shape: rect, label: "luasLingkaran = phi * jariJari * jariJari" }

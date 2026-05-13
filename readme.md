@@ -15,12 +15,17 @@ H@{ shape: rect, label: 'hasil = "Luas lingkaran adalah {luasLingkaran} Keliling
 I@{ shape: lean-r, label: '"{hasil}"' }
 J@{ shape: dbl-circ, label: Stop }
 K@{ shape: diamond, label: "jariJari % 7 == 0" }
-L@{ shape: rect, label: "phi = 22/7"}
-M@{ shape: rect, label: "phi = 3,14"}
+L@{ shape: rect, label: "phi = 22/7" }
+M@{ shape: rect, label: "phi = 3,14" }
+N@{ shape: diamond, label: '(typeof jariJari !== "number") == true' }
+O@{ shape: lean-r, label: '"jariJari must be number"' }
 
-A --> B --> C 
+A --> B 
+N --false--> C 
 C --> K --> L --> D
 K --> M
 M --> D --> E --> F ---> G --> H --> I --> J
+
+B --> N --true--> O --> J
 
 ```

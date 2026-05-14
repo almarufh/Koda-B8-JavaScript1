@@ -1,28 +1,29 @@
 # Perulangan / Iterasi
 
-Perulangan ini berfungsi untuk mencetak bintang berbentuk segitiga
+## Mencetak segitiga bintang
+
+Perulangan ini untuk menampilkan bintang berbentuk segitiga
 
 ```mermaid
-
 flowchart TD
 
-A@{ shape: circle, label: Start }
-B@{ shape: rect, label: "bintang = 1" }
-C@{ shape: rect, label: "x = 1"}
-D@{ shape: diamond, label: "x < 5 " }
-E@{ shape: dbl-circ, label: Stop}
-F@{ shape: rect, label: 'cetak = ""' }
-G@{ shape: rect, label: "y = 1" }
-H@{ shape: lean-r, label: '"{cetak}"' }
-I@{ shape: diamond, label: "y <= bintang" }
-J@{ shape: rect, label: 'cetak += "* "' }
-K@{ shape: rect, label: "y++"}
-L@{ shape: rect, label: "bintang +=1"}
-M@{ shape: rect, label: "x++" }
+A@{shape: circle, label: Start}
+B@{shape: diamond, label: "x <= 4"}
+C@{shape: rect, label: 'star = ""'}
+D@{shape: dbl-circ, label: Stop}
+E@{shape: rect, label: "y=1"}
+F@{shape: diamond, label: "y <= x"}
+G@{shape: diamond, label: 'star += "*"'}
+H@{shape: rect, label: "y++"}
+I@{shape: lean-r, label: '"{star}"'}
+J@{shape: rect, label: "x++"}
+K@{shape: rect, label: "x = 1"}
 
 
-A --> B --> C --> D --false--> E
-D --true--> F --> G
-G --> I --false--> H --> L --> M --> D
-I --true--> J --> K --> I 
+
+A --> K --> B
+B --true--> C --> E --> F
+F --true--> G --> H --> F
+F --false--> I --> J --> B
+B --false--> D
 ```

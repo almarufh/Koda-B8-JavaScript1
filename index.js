@@ -1,31 +1,33 @@
-const jariJari = 5;
+function get(a) {
+  const jariJari = a;
 
-if (typeof jariJari !== "number") {
+  if (typeof jariJari !== "number") {
     console.log("jariJari must be number");
     return;
-}
+  }
 
-let phi = 0;
-let luasLingkaran = 0;
-let kelilingLingkaran = 0;
+  let phi = 0;
+  let luasLingkaran = 0;
+  let kelilingLingkaran = 0;
 
-if ( jariJari % 7 == 0) {
-    phi = 22/7
-}
-else {
-    phi = 3.14
-}
+  if (jariJari % 7 == 0) {
+    phi = 22 / 7;
+  } else {
+    phi = 3.14;
+  }
 
-console.log("phi :", phi);
+  console.log("phi :", phi);
 
-luasLingkaran = phi * jariJari * jariJari;
-kelilingLingkaran = 2 * phi * jariJari;
+  luasLingkaran = phi * jariJari * jariJari;
+  kelilingLingkaran = 2 * phi * jariJari;
 
-let hasil = `
+  let hasil = `
 Luas lingkaran adalah ${luasLingkaran}
 
 Keliling lingkaran adalah ${kelilingLingkaran}
 `;
 
+  return hasil;
+}
 
-console.log(hasil);
+console.log(get(89));
